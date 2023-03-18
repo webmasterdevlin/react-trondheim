@@ -1,11 +1,11 @@
 import React from 'react';
-import Button from '../components/Button';
+
+import MainLayout from '../views/MainLayout';
 
 export default function LoginPage() {
   return (
-    <div>
+    <MainLayout>
       <h1>LoginPage</h1>
-      <Button>CLICK ME</Button>
-    </div>
+    </MainLayout>
   );
 }

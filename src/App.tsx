@@ -1,10 +1,11 @@
 import { BrowserRouter } from 'react-router-dom';
-import LoginPage from './pages/LoginPage';
+
+import EagerRoutes from './EagerRoutes';
 
 const App = () => {
   return (
     <BrowserRouter>
-      <LoginPage />
+      <EagerRoutes />
     </BrowserRouter>
   );
 };
