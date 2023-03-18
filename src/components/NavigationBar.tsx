@@ -21,6 +21,9 @@ export default function NavigationBar() {
               work todos
             </button>
             <button
+              className={`mr-2 mb-2 rounded-lg px-5 py-2.5 text-center text-sm font-medium uppercase
+            ${location.pathname === '/shopping-list' ? 'bg-blue-200' : 'bg-gray-100'}
+            `}
               onClick={() => {
                 navigate('/shopping-list');
               }}
@@ -28,6 +31,9 @@ export default function NavigationBar() {
               shopping list
             </button>
             <button
+              className={`mr-2 mb-2 rounded-lg px-5 py-2.5 text-center text-sm font-medium uppercase
+            ${location.pathname === '/auth' ? 'bg-blue-200' : 'bg-gray-100'}
+            `}
               onClick={() => {
                 navigate('/auth');
               }}
