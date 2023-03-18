@@ -1,13 +1,9 @@
 import { BrowserRouter } from 'react-router-dom';
 
-import EagerRoutes from './EagerRoutes';
-import NavigationBar from './components/NavigationBar';
-
 const App = () => {
   return (
     <BrowserRouter>
-      <NavigationBar />
-      <EagerRoutes />
+      <div className="container prose mx-auto px-4" />
     </BrowserRouter>
   );
 };
