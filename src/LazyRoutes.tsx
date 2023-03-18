@@ -50,10 +50,8 @@ const lazyRoutes: RouteObject[] = [
     element: <LoginPage />,
   },
 ];
-
 const LazyRoutes = () => {
   const contents = useRoutes(lazyRoutes);
   return <>{contents}</>;
 };
-
 export default LazyRoutes;
