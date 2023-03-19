@@ -1,12 +1,12 @@
 import { BrowserRouter } from 'react-router-dom';
 
-import Memo from './built-in-hooks/Memo';
+import Ref from './built-in-hooks/Ref';
 
 const App = () => {
   return (
     <BrowserRouter>
       <div className="container prose mx-auto px-4">
-        <Memo />
+        <Ref />
       </div>
     </BrowserRouter>
   );
