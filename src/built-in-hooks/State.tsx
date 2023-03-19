@@ -23,16 +23,55 @@ export default function State() {
     lastName: '',
   });
 
+  const decrementCount = () => {
+    setCount(prevCount => {
+      return prevCount - 1;
+    });
+    setTheme('red');
+  };
+
+  const incrementCount = () => {
+    setCount(p => {
+      return p + 1;
+    });
+    setTheme('blue');
+  };
+
   return (
     <div>
       <div className="mb-10 flex">
-        <Button color="primary">DECREMENT</Button>
+        <Button onClick={decrementCount} color="primary">
+          DECREMENT
+        </Button>
         <div className="m-5">
           <span>{count} : </span>
           <span>{theme}</span>
         </div>
-        <Button color="primary">INCREMENT</Button>
+        <Button onClick={incrementCount} color="primary">
+          INCREMENT
+        </Button>
       </div>
+      <section className="mb-8">
+        <p className="text-indigo-800">{JSON.stringify(user, null, 2)}</p>
+      </section>
+      <section>
+        <label htmlFor="firstName">First Name:</label>
+        <input
+          id="firstName"
+          value={user.firstName}
+          onChange={e => {
+            setUser({ ...user, firstName: e.target.value });
+          }}
+        />
+        <label htmlFor="lastName">Last Name:</label>
+        <input
+          id="lastName"
+          value={user.lastName}
+          onChange={e => {
+            setUser({ ...user, lastName: e.target.value });
+          }}
+        />
+      </section>
     </div>
   );
 }
