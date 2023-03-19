@@ -1,11 +1,11 @@
 import { BrowserRouter } from 'react-router-dom';
-import State from './built-in-hooks/State';
+import Effect1 from './built-in-hooks/Effect1';
 
 const App = () => {
   return (
     <BrowserRouter>
       <div className="container prose mx-auto px-4">
-        <State />
+        <Effect1 />
       </div>
     </BrowserRouter>
   );
